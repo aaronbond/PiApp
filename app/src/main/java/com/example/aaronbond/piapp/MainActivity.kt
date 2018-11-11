@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        if(isBound) unbindService(connection)
+        if (isBound) unbindService(connection)
         super.onDestroy()
     }
 }

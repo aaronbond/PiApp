@@ -12,11 +12,11 @@ inline fun <T> Iterable<T>.sumByBigDecimal(selector: (T) -> BigDecimal): BigDeci
     return sum
 }
 
-fun Int.isEven() : Boolean {
+fun Int.isEven(): Boolean {
     return this % 2 == 0
 }
 
-fun Long.isEven() : Boolean {
+fun Long.isEven(): Boolean {
     return this % 2 == 0L
 }
 

@@ -6,8 +6,10 @@ import io.reactivex.subjects.PublishSubject
 import kotlinx.coroutines.*
 import java.util.concurrent.TimeUnit
 
-class PiApproximator(private val iterations : Int = 100000000,
-                     private val reportRate: Int = 10) {
+class PiApproximator(
+    private val iterations: Int = 100000000,
+    private val reportRate: Int = 10
+) {
 
     val output = PublishSubject.create<Progress>()
 
