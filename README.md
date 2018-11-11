@@ -40,3 +40,4 @@ There are many other improvements that could be made around the code base
     - managing services in a more centralised / coherent manner
     - proguard to do tree shaking
     - using just coroutines or rxjava or using a defer monad to allow for changing at will
+    - in a normal app i would use a single observable to convey a single immutable view state object to the view
