@@ -57,5 +57,5 @@ class PiApproximator(
         if (!job.isActive) startEstimation()
     }
 
-    data class Progress(val estimate: Double, val timeTaken: Long)
+    data class Progress(val estimate: Double, val durationSeconds: Long)
 }

@@ -8,7 +8,7 @@ import com.example.aaronbond.piapp.PiService
 class MainViewModel {
 
     val estimate = ObservableField("")
-    val timeTaken = ObservableField("")
+    val durationSeconds = ObservableField("")
 
     private lateinit var binder: PiService.ServiceBinder
 
@@ -30,7 +30,7 @@ class MainViewModel {
         binder.getPiObservable().subscribe(
             {
                 estimate.set(it.estimate.toString())
-                timeTaken.set("${it.timeTaken} Seconds")
+                durationSeconds.set("${it.durationSeconds} Seconds")
             },
             { Log.e("ERROR", it.message) }
         )

@@ -63,7 +63,7 @@
                 android:layout_marginStart="8dp"/>
         <TextView
                 tools:text="0 Seconds"
-                android:text="@{viewModel.timeTaken}"
+                android:text="@{viewModel.durationSeconds}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
